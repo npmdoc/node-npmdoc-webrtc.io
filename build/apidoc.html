@@ -1,0 +1,201 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/cavedweller/webRTC.io#readme"
+
+    >webrtc.io (v0.0.4)</a>
+</h1>
+<h4>Abstraction for webRTC.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.webrtc.io">module webrtc.io</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.webrtc.io.listen">
+            function <span class="apidocSignatureSpan">webrtc.io.</span>listen
+            <span class="apidocSignatureSpan">(server)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">webrtc.io.</span>io.webrtc_io</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.webrtc.io.webrtc_io">module webrtc.io.webrtc_io</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.webrtc.io.webrtc_io.listen">
+            function <span class="apidocSignatureSpan">webrtc.io.webrtc_io.</span>listen
+            <span class="apidocSignatureSpan">(server)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.webrtc.io" id="apidoc.module.webrtc.io">module webrtc.io</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.webrtc.io.listen" id="apidoc.element.webrtc.io.listen">
+        function <span class="apidocSignatureSpan">webrtc.io.</span>listen
+        <span class="apidocSignatureSpan">(server)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listen = function (server) {
+  var manager;
+  if (typeof server === &#x27;number&#x27;) {
+    manager = new WebSocketServer({
+        port: server
+      });
+  } else {
+    manager = new WebSocketServer({
+      server: server
+    });
+  }
+
+  manager.rtc = rtc;
+  attachEvents(manager);
+  return manager;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//then a bunch of callbacks are available
+&#x3c;/script&#x3e;
+```
+
+### Server
+
+```javascript
+var webRTC = require(&#x27;webrtc.io&#x27;).<span class="apidocCodeKeywordSpan">listen</span>(8001);
+//then a bunch of callbacks are available
+```
+
+## Stumped?
+```
+#webrtc.io on freenode
+```
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.webrtc.io.webrtc_io" id="apidoc.module.webrtc.io.webrtc_io">module webrtc.io.webrtc_io</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.webrtc.io.webrtc_io.listen" id="apidoc.element.webrtc.io.webrtc_io.listen">
+        function <span class="apidocSignatureSpan">webrtc.io.webrtc_io.</span>listen
+        <span class="apidocSignatureSpan">(server)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listen = function (server) {
+  var manager;
+  if (typeof server === &#x27;number&#x27;) {
+    manager = new WebSocketServer({
+        port: server
+      });
+  } else {
+    manager = new WebSocketServer({
+      server: server
+    });
+  }
+
+  manager.rtc = rtc;
+  attachEvents(manager);
+  return manager;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//then a bunch of callbacks are available
+&#x3c;/script&#x3e;
+```
+
+### Server
+
+```javascript
+var webRTC = require(&#x27;webrtc.io&#x27;).<span class="apidocCodeKeywordSpan">listen</span>(8001);
+//then a bunch of callbacks are available
+```
+
+## Stumped?
+```
+#webrtc.io on freenode
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
