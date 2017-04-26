@@ -1,6 +1,6 @@
 # npmdoc-webrtc.io
 
-#### api documentation for  [webrtc.io (v0.0.4)](https://github.com/cavedweller/webRTC.io#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webrtc.io.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webrtc.io) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webrtc.io.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webrtc.io)
+#### basic api documentation for  [webrtc.io (v0.0.4)](https://github.com/cavedweller/webRTC.io#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-webrtc.io.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-webrtc.io) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-webrtc.io.svg)](https://travis-ci.org/npmdoc/node-npmdoc-webrtc.io)
 
 #### Abstraction for webRTC.
 
@@ -72,7 +72,8 @@
         "type": "git",
         "url": "git://github.com/cavedweller/webRTC.io.git"
     },
-    "version": "0.0.4"
+    "version": "0.0.4",
+    "bin": {}
 }
 ```
 
